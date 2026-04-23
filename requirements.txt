@@ -1,0 +1,7 @@
+# requirements.txt - Lista de dependencias Python para el proyecto de riego inteligente
+# Instala con: pip install -r requirements.txt
+
+streamlit          # Framework para crear la interfaz web del dashboard en tiempo real
+plotly             # Librería para generar gráficos interactivos (historial de humedad)
+pyserial           # Comunicación serial con el Arduino via USB
+python-dotenv      # Carga variables de entorno desde archivo .env

@@ -1,0 +1,15 @@
+# docker-compose.yml - Orquesta los contenedores del proyecto
+# Ejecuta con: docker-compose up --build
+
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    devices:
+      - "${ARDUINO_PORT}:/dev/ttyUSB0"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    restart: unless-stopped

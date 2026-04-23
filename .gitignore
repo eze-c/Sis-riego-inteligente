@@ -1,0 +1,28 @@
+# .gitignore - Archivos y carpetas que Git debe ignorar
+# Archivo de variables de entorno
+.env
+
+# Archivos de Python compilados y cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Cache de Streamlit
+.streamlit/
+
+# Archivos de datos generados dinámicamente
+datos_riego.json
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs y datos temporales
+*.log
+data/
+temp/
+
+# Archivos de IDE/editor
+.vscode/
+.idea/
