@@ -1,4 +1,4 @@
-# docker-compose.yml - Orquesta los contenedores del proyecto
+# docker-compose.yml - Define los servicios para la aplicación de riego automático
 # Ejecuta con: docker-compose up --build
 
 services:
@@ -7,7 +7,7 @@ services:
     ports:
       - "8501:8501"
     devices:
-      - "${ARDUINO_PORT}:/dev/ttyUSB0"
+      - "${ARDUINO_PORT}:/dev/ttyUSB1"
     env_file:
       - .env
     volumes:
